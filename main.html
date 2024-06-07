@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>コーヒーショップ</h1>
+    </header>
+    <div class="search-box">
+        <form>
+            <label>
+                <input type="checkbox" name="product-type" value="coffee-powder"> コーヒー粉
+            </label>
+            <label>
+                <input type="checkbox" name="product-type" value="sweets"> お菓子
+            </label>
+            <label>
+                <input type="checkbox" name="product-type" value="stick"> スティック
+            </label>
+            <button type="submit">検索</button>
+        </form>
+    </div>
+    <div class="content">
+        <main>
+            <div class="product-grid">
+                <div class="product" data-product-id="1" data-product-name="商品名 1" data-product-price="¥1,080（税込）">
+                    <img src="https://raw.githubusercontent.com/tomohiro-ono-works/img/main/img/cocoa.png" alt="Product 1">
+                    <h2>商品名 1</h2>
+                    <p class="price">価格: ¥1,080（税込）</p>
+                    <p class="description">このコーヒーは芳醇な香りと深い味わいが特徴です。</p>
+                    <div class="buttons">
+                        <button type="button" class="add-button">追加</button>
+                        <button type="button" class="remove-button">外す</button>
+                    </div>
+                </div>
+                <div class="product" data-product-id="2" data-product-name="商品名 2" data-product-price="¥1,296（税込）">
+                    <img src="https://raw.githubusercontent.com/tomohiro-ono-works/img/main/img/coffee_american.png" alt="Product 2">
+                    <h2>商品名 2</h2>
+                    <p class="price">価格: ¥1,296（税込）</p>
+                    <p class="description">滑らかな口当たりとほのかな甘みが楽しめます。</p>
+                    <div class="buttons">
+                        <button type="button" class="add-button">追加</button>
+                        <button type="button" class="remove-button">外す</button>
+                    </div>
+                </div>
+                <div class="product" data-product-id="3" data-product-name="商品名 3" data-product-price="¥1,620（税込）">
+                    <img src="https://raw.githubusercontent.com/tomohiro-ono-works/img/main/img/coffee_blend.png" alt="Product 3">
+                    <h2>商品名 3</h2>
+                    <p class="price">価格: ¥1,620（税込）</p>
+                    <p class="description">特選された豆を使用した贅沢な一杯。</p>
+                    <div class="buttons">
+                        <button type="button" class="add-button">追加</button>
+                        <button type="button" class="remove-button">外す</button>
+                    </div>
+                </div>
+                <div class="product" data-product-id="4" data-product-name="商品名 4" data-product-price="¥1,944（税込）">
+                    <img src="https://raw.githubusercontent.com/tomohiro-ono-works/img/main/img/coffee_cafe_macchiato.png" alt="Product 4">
+                    <h2>商品名 4</h2>
+                    <p class="price">価格: ¥1,944（税込）</p>
+                    <p class="description">濃厚なコクと豊かな風味が特徴です。</p>
+                    <div class="buttons">
+                        <button type="button" class="add-button">追加</button>
+                        <button type="button" class="remove-button">外す</button>
+                    </div>
+                </div>
+                <div class="product" data-product-id="5" data-product-name="商品名 5" data-product-price="¥1,728（税込）">
+                    <img src="https://raw.githubusercontent.com/tomohiro-ono-works/img/main/img/coffee_cafe_mocha.png" alt="Product 5">
+                    <h2>商品名 5</h2>
+                    <p class="price">価格: ¥1,728（税込）</p>
+                    <p class="description">フルーティーな香りと爽やかな後味。</p>
+                    <div class="buttons">
+                        <button type="button" class="add-button">追加</button>
+                        <button type="button" class="remove-button">外す</button>
+                    </div>
+                </div>
+                <div class="product" data-product-id="6" data-product-name="商品名 6" data-product-price="¥1,404（税込）">
+                    <img src="https://raw.githubusercontent.com/tomohiro-ono-works/img/main/img/coffee_cafeole.png" alt="Product 6">
+                    <h2>商品名 6</h2>
+                    <p class="price">価格: ¥1,404（税込）</p>
+                    <p class="description">濃いエスプレッソのような力強い味。</p>
+                    <div class="buttons">
+                        <button type="button" class="add-button">追加</button>
+                        <button type="button" class="remove-button">外す</button>
+                    </div>
+                </div>
+                <div class="product" data-product-id="7" data-product-name="商品名 7" data-product-price="¥1,836（税込）">
+                    <img src="https://raw.githubusercontent.com/tomohiro-ono-works/img/main/img/coffee_cappuccino.png" alt="Product 7">
+                    <h2>商品名 7</h2>
+                    <p class="price">価格: ¥1,836（税込）</p>
+                    <p class="description">ミルクとの相性抜群のマイルドな味。</p>
+                    <div class="buttons">
+                        <button type="button" class="add-button">追加</button>
+                        <button type="button" class="remove-button">外す</button>
+                    </div>
+                </div>
+                <div class="product" data-product-id="8" data-product-name="商品名 8" data-product-price="¥1,512（税込）">
+                    <img src="https://raw.githubusercontent.com/tomohiro-ono-works/img/main/img/coffee_caramel_macchiato.png" alt="Product 8">
+                    <h2>商品名 8</h2>
+                    <p class="price">価格: ¥1,512（税込）</p>
+                    <p class="description">バランスの取れた味わいと香り。</p>
+                    <div class="buttons">
+                        <button type="button" class="add-button">追加</button>
+                        <button type="button" class="remove-button">外す</button>
+                    </div>
+                </div>
+                <div class="product" data-product-id="9" data-product-name="商品名 9" data-product-price="¥1,188（税込）">
+                    <img src="https://raw.githubusercontent.com/tomohiro-ono-works/img/main/img/coffee_cream_caramel.png" alt="Product 9">
+                    <h2>商品名 9</h2>
+                    <p class="price">価格: ¥1,188（税込）</p>
+                    <p class="description">深煎りでコクのある味。</p>
+                    <div class="buttons">
+                        <button type="button" class="add-button">追加</button>
+                        <button type="button" class="remove-button">外す</button>
+                    </div>
+                </div>
+                <div class="product" data-product-id="10" data-product-name="商品名 10" data-product-price="¥2,052（税込）">
+                    <img src="https://raw.githubusercontent.com/tomohiro-ono-works/img/main/img/coffee_cream_green.png" alt="Product 10">
+                    <h2>商品名 10</h2>
+                    <p class="price">価格: ¥2,052（税込）</p>
+                    <p class="description">豊かな香りと濃厚な味わい。</p>
+                    <div class="buttons">
+                        <button type="button" class="add-button">追加</button>
+                        <button type="button" class="remove-button">外す</button>
+                    </div>
+                </div>
+                <div class="product" data-product-id="11" data-product-name="商品名 11" data-product-price="¥1,350（税込）">
+                    <img src="https://raw.githubusercontent.com/tomohiro-ono-works/img/main/img/coffee_cream_pink.png" alt="Product 11">
+                    <h2>商品名 11</h2>
+                    <p class="price">価格: ¥1,350（税込）</p>
+                    <p class="description">すっきりとした後味が特徴。</p>
+                    <div class="buttons">
+                        <button type="button" class="add-button">追加</button>
+                        <button type="button" class="remove-button">外す</button>
+                    </div>
+                </div>
+                <div class="product" data-product-id="12" data-product-name="商品名 12" data-product-price="¥1,134（税込）">
+                    <img src="https://raw.githubusercontent.com/tomohiro-ono-works/img/main/img/coffee_darugona.png" alt="Product 12">
+                    <h2>商品名 12</h2>
+                    <p class="price">価格: ¥1,134（税込）</p>
+                    <p class="description">軽やかな風味と豊かな香り。</p>
+                    <div class="buttons">
+                        <button type="button" class="add-button">追加</button>
+                        <button type="button" class="remove-button">外す</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <aside class="sidebar">
+            <h2>お買い物カゴ</h2>
+            <div id="sidebar-content">
+                <p>ここに購買された商品が投入されます。</p>
+            </div>
+        </aside>
+    </div>
+</body>
+</html>
