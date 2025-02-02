@@ -1,0 +1,28 @@
+{"testCases": [
+  {
+    "name": "ケース01：基本パターン",
+    "dashboardUrl": "https://public.tableau.com/views/KPI_16405431603270/sheet1_1",
+    "filterPattern": [
+      {"field": "オーダー年度","value": ["2020"]}
+    ],
+    "ExportPDFOptions":[{"scaling": "PrintScaling.Perc60","pageSize": "PrintPageSize.Letter", "orientation": "PrintOrientation.Portrait"}]
+  },
+  {
+    "name": "ケース02：複数項目、複数値",
+    "dashboardUrl": "https://public.tableau.com/views/_16834784089080/1_1",
+    "filterPattern": [
+      {"field": "Large Category Name","value": ["フード"]},
+      {"field": "Middle Category Name","value": ["ピザ","サラダ"]}
+    ],
+    "ExportPDFOptions":[{"scaling": "PrintScaling.Perc60","pageSize": "PrintPageSize.Letter", "orientation": "PrintOrientation.Portrait"}]
+  },
+  {
+    "name": "ケース03：ダッシュボードが存在しない、URLの綴りが間違っている",
+    "dashboardUrl": "https://your-tableau-server/views/workbook4/view4",
+    "filterPattern": [
+      {"field": "項目3","value": ["データA", "データB"]}
+    ],
+    "ExportPDFOptions":[{"scaling": "PrintScaling.Perc60","pageSize": "PrintPageSize.Letter", "orientation": "PrintOrientation.Portrait"}]
+  }
+]}
+  
