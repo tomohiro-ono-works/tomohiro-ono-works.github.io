@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.body.addEventListener("click", async (event) => {
     if (event.target.classList.contains("pdf-button")) {
       const index = event.target.getAttribute("data-index");
-      await downloadPdf2(index);
+      await downloadPdf(index);
     }
   });
 });
