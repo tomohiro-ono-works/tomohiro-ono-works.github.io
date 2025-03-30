@@ -1,0 +1,11 @@
+{
+  "ProjectName": "テスト",
+  "SourceFolder": "C:\\program1\\etl\\元データ",
+  "SourceFilePattern": "^テストデータ_\\d{8}\\.csv$",
+  "SourceFileEncoding": "Unicode",
+  "SourceFileHeaderLine": 5,
+  "SourceFileDataStartLine": 6,
+  "SourceFileImportLines": 5,
+  "ImportFileColumns": "名前,年 齢,日付",
+  "ExportFileEncoding": "Default"
+}
